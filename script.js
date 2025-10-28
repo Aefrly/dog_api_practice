@@ -13,4 +13,7 @@ async function getDogFact() {
   output.textContent = fact;
 }
 
-getDogFact();
+const button = document.getElementById('fetch-dog-btn');
+button.addEventListener('click', function() {
+    getDogFact();
+});
