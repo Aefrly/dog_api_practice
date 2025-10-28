@@ -3,6 +3,7 @@ console.log("script.js loaded");
 let data = fetch('https://dogapi.dog/api/facts');
 console.log(data);
 
+//Sending API requests using async/await
 async function getDogFact() {
   const response = await fetch("https://dogapi.dog/api/facts");
   const data = await response.json();
