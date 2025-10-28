@@ -23,7 +23,7 @@ function getDogFact() {
     .then(data => { 
       // Update the DOM with the dog fact
       const fact = data.facts[0]; 
-      const output = document.getElementById("fact-output"); 
+      const output = document.getElementById("dog-fact-output"); 
       output.textContent = fact; 
     }) 
     .catch(error => { 
